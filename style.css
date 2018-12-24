@@ -1,3 +1,121 @@
+<<<<<<< HEAD
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url(images/texture-wallpaper.jpg);
+    background-size: contain;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    background-image: url(images/baby%20j.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 540px;
+    position: relative;
+}
+h1 {
+    font-family: "Noto Serif SC", serif;
+    text-align: center;
+    position: relative;
+    padding-top: 10%;
+}
+ul {
+    padding: 0;
+}
+#links {
+    text-align: center;
+    padding-top: 10px;
+}
+#links li {
+    display: inline-block;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 10%;
+    opacity: 0.7;
+    background-color: gainsboro;
+    box-shadow: 0px 2px 22px 1px rgba(0,0,0,0.6);
+}
+#links li:hover {
+    background-color: rgba(255,2,0,.4);
+    opacity: 0.9;
+}
+img {
+    height: 40px;
+}
+
+.text {
+    padding: 3%;
+    background-color: white;
+    box-shadow: 0px 2px 22px 1px rgba(0,0,0,0.6);
+/*
+    transform: translateY(20px);
+    transition: 0.5s ease-in-out; 
+    opacity: 0;
+}
+.visible {
+    opacity: 1;
+    transform: translateY(0px);
+*/
+}
+h2 {
+    font-family: 'Kalam', serif;
+    display: block;
+    margin-bottom: -10px;
+    }
+
+main {
+    margin-left: 20%; 
+    margin-right: 20%;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'Noto Serif SC', serif;
+    } 
+
+.highlight {
+    background-image: linear-gradient(180deg,transparent 35%,rgba(255,2,0,.4) 0)
+}
+#End {
+    text-align: right;
+}
+footer {
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Signika', sans-serif;
+    background-color: gainsboro;
+    
+}
+footer p {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    }   
+
+@media (max-width: 600px) {
+    main {
+        margin-left: 4%; 
+        margin-right: 4%;
+    } 
+    h1 {
+        padding-top: 2%;
+        font-size: 26px;
+    }
+    .header {
+       height: 250px;
+       width: 100%; 
+    }
+    img {
+        height: 25px;
+    }
+    footer {
+        background-color: rgba(255,2,0,.2);
+        padding: 10px 10px;
+    }
+    footer p {
+        margin-bottom: 0px;
+    }
+=======
 body {
     padding: 0;
     margin: 0;
@@ -91,4 +209,5 @@ footer {
     footer p {
         margin-bottom: 0px;
     }
+>>>>>>> eebd071a9e9128806036defcf6c5a4e0e479cb2e
 }
