@@ -10,7 +10,7 @@ html {
 header {
     background-image: url(images/baby%20j.jpg);
     background-size: contain;
-    background-position: center;
+    background-position:top;
     background-repeat: no-repeat;
     height: 540px;
     position: relative;
@@ -19,37 +19,52 @@ h1 {
     font-family: "Noto Serif SC", serif;
     text-align: center;
     position: relative;
-    padding-top: 8%;
+    margin-top: 8%;
 }
 ul {
     padding: 0;
+    height: 70px;
 }
 #links {
     text-align: center;
     padding-top: 10px;
 }
-#links li {
-    display: inline-block;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    width: 10%;
-    opacity: 0.7;
-    background-color: gainsboro;
-    box-shadow: 0px 2px 22px 1px rgba(0,0,0,0.6);
+    #links li {
+        display: inline-block;
+        padding: 1% 1%;
+        height: 70px;
+        width: 10%;
+        opacity: 0.7;
+        background-color: gainsboro;
+        box-shadow: 0px 2px 22px 1px rgba(0,0,0,0.6);
+    }
+    #links li:hover {
+        background-color: rgba(255,2,0,.4);
+        opacity: 0.9;
+        border: 1px solid black;
+    }
+    #links li span {
+        display: none;
 }
-#links li:hover {
-    background-color: rgba(255,2,0,.4);
-    opacity: 0.9;
-}
-img {
-    height: 40px;
+    #links img {
+        margin: auto;
+        height: 40px;
+    }
+    #links li:hover span {
+        display: inline-block;
+        font-family: 'Signika', sans-serif;
+        text-decoration: none;
+        color: white;
+    }
+#links li:hover img {
+        opacity: 1;
 }
 
 .text {
     padding: 3%;
+    margin-top: 2%;
     background-color: white;
     box-shadow: 0px 2px 22px 1px rgba(0,0,0,0.6);
-/*
     transform: translateY(20px);
     transition: 0.5s ease-in-out; 
     opacity: 0;
@@ -57,7 +72,6 @@ img {
 .visible {
     opacity: 1;
     transform: translateY(0px);
-*/
 }
 h2 {
     font-family: 'Kalam', serif;
@@ -68,7 +82,7 @@ h2 {
 main {
     margin-left: 20%; 
     margin-right: 20%;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 30px;
     font-family: 'Noto Serif SC', serif;
     } 
@@ -76,14 +90,21 @@ main {
 .highlight {
     background-image: linear-gradient(180deg,transparent 35%,rgba(255,2,0,.4) 0)
 }
+#Start {
+    margin-top: 0;
+}
 #End {
     text-align: right;
+}
+#Future {
+    margin-bottom: 2%;
 }
 footer {
     text-align: center;
     font-size: 12px;
     font-family: 'Signika', sans-serif;
     background-color: gainsboro;
+    padding: 10px 10px;
     
 }
 footer p {
@@ -100,18 +121,20 @@ footer p {
         padding-top: 2%;
         font-size: 26px;
     }
-    .header {
-       height: 250px;
-       width: 100%; 
+    header {
+        height: 250px;
+        width: 100%;
     }
     img {
         height: 25px;
     }
-    footer {
-        background-color: rgba(255,2,0,.2);
-        padding: 10px 10px;
-    }
     footer p {
         margin-bottom: 0px;
     }
-}
+    #links {
+    padding-top: 0;
+    }
+    
+    ul {
+    margin-top: 0;
+    }
